@@ -5,7 +5,7 @@ const morgan = require('morgan')
 const multer = require('multer')
 const path = require('path')
 const fs = require('fs')
-var app = express();
+const app = express();
 app.use(secure)
 app.use(morgan('dev'));
 app.use(express.static('client'));
@@ -13,17 +13,17 @@ app.set("json spaces",2)
 __path = process.cwd()
 
 
-var downloader = require('./server/downloader.js');
-var search = require('./server/search.js');
-var anime = require('./server/anime.js');
-var randomimg = require('./server/randomimage.js');
-var nsfw = require('./server/nsfw.js');
-var photooxy = require('./server/photooxy.js');
-var otakudesu = require('./server/otakudesu.js');
-var games = require('./server/games.js');
-var primbon = require('./server/primbon.js');
-var convert = require('./server/convert.js');
-var other = require('./server/other.js');
+const downloader = require('./server/downloader.js');
+const search = require('./server/search.js');
+const anime = require('./server/anime.js');
+const randomimg = require('./server/randomimage.js');
+const nsfw = require('./server/nsfw.js');
+const photooxy = require('./server/photooxy.js');
+const otakudesu = require('./server/otakudesu.js');
+const games = require('./server/games.js');
+const primbon = require('./server/primbon.js');
+const convert = require('./server/convert.js');
+const other = require('./server/other.js');
 
 app.use('/downloader', downloader)
 app.use('/search', search)
